@@ -2,8 +2,16 @@
 {% load static %}
 {% block content %}
 <style>
+
+.container{
+    padding: 0;
+    margin: 0, auto;
+}
+.container a{
+    width: 45%;
+    max-width: 250px
+}
 .container div {
-  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +46,7 @@
 {% endif %}
 {% include 'snippets/pagination.html' with page_obj=page_obj %}
 <div style="text-align: center">
-    <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill col03 mt-3 mb-3" %}>Create Article</a>
+    <a href="{% url 'articleapp:create' %}" class="btn btn-dark rounded-pill col03 mt-3 mb-3 px-3%}">Create Article</a>
 </div>
 
 
